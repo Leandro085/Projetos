@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+<body>
+    
+    <div class="conteudo-calculadora">
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+
+            <div class="caixa-n">
+                <label for="primeiro-n">Digite o primeiro número</label>
+                <input type="text" name="primeiro-n" id="n1">
+                <label for="segundo-n">Digite o segundo número</label>
+                <input type="text" name="segundo-n" id="n2">
+            </div>
+
+            <div class="botoes">
+                <button onclick="somar()">Somar</button>
+                <button onclick="subtrair()">Subtrair</button>
+                <button onclick="multiplicar()">Multiplicar</button>
+                <button onclick="dividir()">Dividir</button>
+            </div>
+
+            <div class="resultado">
+                <p>O resultado é: <span></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

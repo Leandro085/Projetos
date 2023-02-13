@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg, #4b086d, #acc0fe);
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-calculadora {
+    background: #acc0fe8e;
+    box-shadow: 8px 10px 8px rgba(87, 235, 255, .9);
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    height: 450px;
+    border-radius: 8px;
+}
+
+.conteudo-calculadora h1 {
+    margin-top: 35px;
+    text-align: center;
+    color: #330047;
+}
+
+.calculadora {
+    width: 80%;
+    height: 100%;
+}
+
+.caixa-n {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 23px 0px;
+}
+
+.caixa-n input {
+    margin: 5px 0px;
+    padding: 4px 8px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background: #ffffff7e;
+    outline: none;
+}
+
+.caixa-n input:hover {
+    border: 2px solid transparent;
+    box-shadow: 4px 6px 4px rgba(87, 235, 255, .9);
+}
+
+.caixa-n label {
+    color: #330047;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botoes button {
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin: 0px 10px;
+    padding: 6px 7px;
+    background: #ffffff7e;
+    color: #330047;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.botoes button:hover {
+    border: 2px solid transparent;
+    box-shadow: 4px 6px 4px rgba(87, 235, 255, .9);
+    transition: all 0.4s;
+}
+
+.resultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 23px 0px;
+}
+
+.resultado p {
+    color: #330047;
+    font-size: 16px;
+    font-weight: 600;
+}
