@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: hsl(212, 45%, 89%);
+    }
+
+    .container {
+      width: 20vw;
+      height: 70vh;
+      margin: 50px auto;
+      padding: 10px;
+      background: hsl(0, 0%, 100%);
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .img-top img {
+      width: 255px;
+      height: 255px;
+      margin-top: 5px;
+      border-radius: 10px;
+    }
+
+    .text-bottom {
+      padding: 0px 5px 0px 5px;
+      width: 250px;
+    }
+
+    #sinopse-1 {
+      color: hsl(218, 44%, 22%);
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    #sinopse-2 {
+      color: hsl(220, 15%, 55%);
+      text-align: center;
+      text-indent: 5px;
+      font-size: 15px;
+      font-weight: 400;
+    }
+
+    @media (max-width: 375px) {
+      .container {
+        width: 70vw;
+        height: 70vh;
+      }
+
+      .img-top img {
+        width: 255px;
+        height: 255px;
+      }
+    }
+
+    /* @media (max-width: 320vw) {
+      .container {
+        width: 83vw;
+        height: 65vh;
+        margin: 200px auto;
+      }
+    } */
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+
+    <div class="img-top">
+
+      <img src="images/image-qr-code.png">
+
+    </div>
+
+
+    <div class="text-bottom">
+
+      <p id="sinopse-1">
+        Improve your front-end <br> skills by building projects
+      </p>
+
+      <p id="sinopse-2">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
+
+    </div>
+  </div>
+</body>
+</html>
