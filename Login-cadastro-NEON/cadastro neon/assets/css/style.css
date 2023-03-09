@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.container {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #190c2b;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    max-width: 70%;
+    height: 70%;
+    /* background: #1E1842; */
+    border: 1px solid #00e7c8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-left {
+    width: 55%;
+    height: 100%;
+}
+
+.img-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.right-content {
+    width: 35%;
+    height: auto;
+    background: #190c2b;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title {
+    color: #00e7c8;
+}
+
+.inputs input[type="text"],
+input[type="password"], input[type="email"] {
+    margin: .3rem;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .3em .7em;
+    background: #190c2b;
+    color: #00e7c8;
+    border: 1px solid #00e7c8;
+    border-radius: .75em;
+}
+
+.inputs input[type="text"]:hover {
+    background: #00e7c8;
+    color: #190c2b;
+    box-shadow: 4px 3px 5px #00e7c8;
+    transition: all .2s ease-in;
+}
+
+.inputs input[type="text"]:focus {
+    background: #00e7c8;
+    color: #190c2b;
+    box-shadow: 4px 3px 5px #00e7c8;
+    transition: all .2s ease-in;
+}
+
+.inputs input[type="password"]:hover {
+    background: #00e7c8;
+    color: #190c2b;
+    box-shadow: 4px 3px 5px #00e7c8;
+    transition: all .2s ease-in;
+}
+
+.inputs input[type="password"]:focus {
+    background: #00e7c8;
+    color: #190c2b;
+    box-shadow: 4px 3px 5px #00e7c8;
+    transition: all .2s ease-in;
+}
+
+.inputs input[type="email"]:hover {
+    background: #00e7c8;
+    color: #190c2b;
+    box-shadow: 4px 3px 5px #00e7c8;
+    transition: all .2s ease-in;
+}
+
+.inputs input[type="email"]:focus {
+    background: #00e7c8;
+    color: #190c2b;
+    box-shadow: 4px 3px 5px #00e7c8;
+    transition: all .2s ease-in;
+}
+
+.inputs label {
+    color: #00e7c8;
+}
+
+.inputs input[type="text"]:hover {
+    color: #190c2b;
+    transition: all .2s ease-in;
+}
+
+.inputs input[type="password"]:hover {
+    color: #190c2b;
+    transition: all .2s ease-in;
+}
+
+.inputs input[type="email"]:hover {
+    color: #190c2b;
+    transition: all .2s ease-in;
+}
+
+button {
+    font-size: 16px;
+    padding: .3em .7em;
+    border: 1px solid #00e7c8;
+    border-radius: .75em;
+    background: #190c2b;
+    color: #00e7c8;
+}
+
+button:hover {
+    background: #00e7c8;
+    color: #190c2b;
+    box-shadow: 4px 3px 5px #00e7c8;
+    transition: all .2s ease-in;
+}
+
+@media (max-width: 1150px) {
+    .content {
+        min-width: 50%;
+        min-height: 50%;
+    }
+
+    .right-content {
+        width: 40%;
+        height: 100%;
+    } 
+
+    .img-left img {
+        width: 400px;
+        
+    }
+}
+
+@media (max-width: 860px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-left {
+        display: none;
+    }
+
+    .img-left img {
+        display: none;
+    }
+
+    .right-content {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    .content {
+        max-width: 100%;
+        min-height: 50%;
+    }
+
+    .inputs input[type="text"],
+    input[type="password"] {
+        margin: .3rem;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .3em .5em;
+    }
+}
